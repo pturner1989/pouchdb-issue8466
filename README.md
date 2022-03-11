@@ -10,7 +10,7 @@ Then send a POST to http://127.0.0.1:5984/_replicator
 
 ```
 {
-  "_id": "test-replciation",
+  "_id": "test-replication",
   "source": {
     "headers": {},
     "url": "http://127.0.0.1:5984/test"
