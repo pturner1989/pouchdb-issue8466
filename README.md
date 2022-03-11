@@ -13,18 +13,18 @@ Then send a POST to http://127.0.0.1:5984/_replicator
   "_id": "test-replciation",
   "source": {
     "headers": {},
-    "url": "http://127.0.0.1:5985/test"
+    "url": "http://127.0.0.1:5984/test"
   },
   "target": {
     "headers": {},
-    "url": "http://127.0.0.1:5985/nonsense"
+    "url": "http://127.0.0.1:5984/nonsense"
   },
   "create_target": true,
   "continuous": false
 }
 ```
 
-or, go to http://127.0.0.1/_utils and create a new replication in Fauxton.
+or, go to http://127.0.0.1:5984/_utils and create a new replication in Fauxton.
 
 
 You will then see the document is replicated sucessfully but the digests do not match. In the event this was a corrupted transfer a new revision (or full resync) is required to rectify.
